@@ -1,2 +1,3 @@
 # colartproj
-Kahng, suri, tina project  art thing
+Khang, Suri and Tina's Art Yay
+
