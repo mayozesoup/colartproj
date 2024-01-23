@@ -13,14 +13,17 @@ function setup() {
   createCanvas(800, 500);
   y = 200;
   direction = true;
-}
-
-function draw() {
   background(220);
   fill('green');
   rect(0,350,800,150);
   fill('gray');
   ellipse(100, y, 100, 100);
-  draw_tree(400,250,100);
+  for(let i = 25; i < 800; i = i+100) {
+    draw_tree(i + random(-15,15), 325 + random(-10,10), 50);
+  }
+}
+
+function draw() {
+
   
 }
