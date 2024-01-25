@@ -1,6 +1,7 @@
 
 let y;
-// let tree_arr = new Array()
+let tree_arr = new Array();
+
 class Sprite {
   constructor(x,y,size) {
     this.x = x;
@@ -20,6 +21,10 @@ class Sprite {
 }
 
 function setup() {
+  
+}
+
+function draw() {
   createCanvas(800, 500);
   y = 200;
   background(220);
@@ -27,16 +32,10 @@ function setup() {
   rect(0,0,800,500)
   fill('green');
   rect(0,350,800,150);
-  fill('gray');
-  ellipse(100, y, 100, 100);
   for(let i = 50; i < 800; i = i+120) {
-    let tree1 = new Sprite(i+random(-15,15),330+random(-10,10),50);
+    let tree1 = new   Sprite(i+random(-15,15),330+random(-10,10),50);
     tree1.draw_tree();
   }
   
-}
-
-function draw() {
-
   
 }
