@@ -26,12 +26,20 @@ function setup() {
 
 function draw() {
   background(220);
+  fill('#67AFE1');
+  rect(0,0,800,500);
   
   // Draw mountains
   fill('#C0C0C0');
-  triangle(0, 350, 200, 100, 400, 350);
-  triangle(200, 350, 400, 130, 600, 350);
-  triangle(400, 350, 600, 200, 800, 350);
+  let x_offset = random(-15,15);
+  let y_offset = random(-15,15);
+  triangle(0 + x_offset, 350 + y_offset, 200 + x_offset, 100 + y_offset, 400 + x_offset, 350 + y_offset);
+  x_offset = random(-15,15);
+  y_offset = random(-15,15);
+  triangle(200 + x_offset, 350 + y_offset, 400 + x_offset, 130 + y_offset, 600 + x_offset, 350 + y_offset);
+  x_offset = random(-15,15);
+  y_offset = random(-15,15);
+  triangle(400 + x_offset, 350 + y_offset, 600 + x_offset, 200 + y_offset, 800 + x_offset, 350 + y_offset);
   
   // Draw sun
   fill('yellow');
